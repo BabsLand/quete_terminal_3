@@ -1,0 +1,8 @@
+  447  grep "France;2019;PHP" < wilders.csv | wc  > php_france_2019.csv
+  448  grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv
+  449  grep "Toulouse, France,.*JavaScript" > js_toulouse.csv
+  450  grep "Toulouse,France,.*,JavaScript" wilders.csv > javascript_toulouse.csv
+  451  grep "Biarritz,France,.*,JavaScript" wilders.csv > javascript_biarritz.csv
+  452  grep "Biarritz,France,.*,JavaScript" wilders.csv > javascript_biarritz.csv
+  453  cat javascript_biarritz.csv javascript_toulouse.csv > javascript_biarritz_toulouse.csv
+  454  history|tail -n15 > history.txt
